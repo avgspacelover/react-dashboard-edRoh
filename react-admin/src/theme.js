@@ -199,7 +199,7 @@ export const themeSettings= (mode)=> {
 }
 
 // lets us trigger theme
-export const colorModeContext = createContext({
+export const ColorModeContext = createContext({
     toggleColorMode: ()=> {
 
     }
