@@ -1,4 +1,5 @@
-import { Typography,Box,useTheme } from "@mui/material/styles/createTypography";
+import {Box,Typography, useTheme} from "@mui/material";
+
 import { tokens } from "../theme";
 
 
@@ -28,3 +29,4 @@ const Header =({title, subtitle})=> {
     )
 
 }
+export default Header
