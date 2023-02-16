@@ -1,7 +1,7 @@
 import {Box, Button, TextField} from "@mui/material";
-import {Formik} from "Formik";
+import {Formik} from "formik";
 import * as yup from "yup";
-import useMediaQuery from "@mui/useMediaQuery";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
 const initialValues= {
     firstName: "",
@@ -14,13 +14,13 @@ const initialValues= {
 const phoneRegExp =
   /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
  
-const userSchema= yup.object.shape({
+const userSchema= yup.object().shape({
     firstName:yup.string().required("required"),
     lastName: yup.string().required("required"),
     email:yup.string().email("Invalid Email").required("required"),
     contact: yup
         .string()
-        .match(phoneRegExp,"Phone number is not valid")
+        .matches(phoneRegExp,"Phone number is not valid")
         .required("required"),
     address1: yup.string().required("required"),
     address2: yup.string().required("required"),
@@ -140,7 +140,7 @@ const Form = ()=> {
 
                         <Box display="flex" justifyContent="end" mt="20px">
                             <Button type="submit" color="secondary"  variant="contained">
-
+                                Submit
                             </Button>
                         </Box>
                     </form>

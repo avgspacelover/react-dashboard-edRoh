@@ -10,7 +10,7 @@ import Header from "../../components/Header";
 const Contacts= ()=> {
 
     const theme= useTheme();
-    const colors= tokens(theme.paletter.mode);
+    const colors= tokens(theme.palette.mode);
 
     const columns= [
         {field: "id", headerName: "ID", flex: 0.5 },
