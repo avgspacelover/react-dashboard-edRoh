@@ -26,7 +26,7 @@ const Dashboard = () => {
         <Box>
           <Button
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              backgroundColor: colors.blueaccent[700],
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
@@ -61,7 +61,7 @@ const Dashboard = () => {
             increase="+14%"
             icon={
               <EmailIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenaccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -80,7 +80,7 @@ const Dashboard = () => {
             increase="+21%"
             icon={
               <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenaccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -99,7 +99,7 @@ const Dashboard = () => {
             increase="+5%"
             icon={
               <PersonAddIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenaccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -118,7 +118,7 @@ const Dashboard = () => {
             increase="+43%"
             icon={
               <TrafficIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.greenaccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -148,7 +148,7 @@ const Dashboard = () => {
               <Typography
                 variant="h3"
                 fontWeight="bold"
-                color={colors.greenAccent[500]}
+                color={colors.greenaccent[500]}
               >
                 $59,342.32
               </Typography>
@@ -156,7 +156,7 @@ const Dashboard = () => {
             <Box>
               <IconButton>
                 <DownloadOutlinedIcon
-                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                  sx={{ fontSize: "26px", color: colors.greenaccent[500] }}
                 />
               </IconButton>
             </Box>
@@ -194,7 +194,7 @@ const Dashboard = () => {
             >
               <Box>
                 <Typography
-                  color={colors.greenAccent[500]}
+                  color={colors.greenaccent[500]}
                   variant="h5"
                   fontWeight="600"
                 >
@@ -206,7 +206,7 @@ const Dashboard = () => {
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
               <Box
-                backgroundColor={colors.greenAccent[500]}
+                backgroundColor={colors.greenaccent[500]}
                 p="5px 10px"
                 borderRadius="4px"
               >
@@ -235,7 +235,7 @@ const Dashboard = () => {
             <ProgressCircle size="125" />
             <Typography
               variant="h5"
-              color={colors.greenAccent[500]}
+              color={colors.greenaccent[500]}
               sx={{ mt: "15px" }}
             >
               $48,352 revenue generated
